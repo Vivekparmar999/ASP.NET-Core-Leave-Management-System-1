@@ -1,0 +1,17 @@
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.AssemblyInfoInputs.cache
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.AssemblyInfo.cs
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Application.deps.json
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Application.dll
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\ref\LeaveManagement.Application.dll
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Application.pdb
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Common.dll
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Data.dll
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Data.pdb
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\bin\Debug\net5.0\LeaveManagement.Common.pdb
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.csproj.AssemblyReference.cache
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.csproj.CopyComplete
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.dll
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\ref\LeaveManagement.Application.dll
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Application\obj\Debug\net5.0\LeaveManagement.Application.pdb

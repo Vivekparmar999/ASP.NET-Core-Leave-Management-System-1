@@ -1,0 +1,56 @@
+2022-02-23 11:41:26.630 +05:30 [INF] Now listening on: https://localhost:5001
+2022-02-23 11:41:26.686 +05:30 [INF] Now listening on: http://localhost:5000
+2022-02-23 11:41:26.687 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-23 11:41:26.687 +05:30 [INF] Hosting environment: Development
+2022-02-23 11:41:26.688 +05:30 [INF] Content root path: C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web
+2022-02-23 11:41:30.721 +05:30 [INF] HTTP GET / responded 200 in 1183.3691 ms
+2022-02-23 15:13:54.286 +05:30 [INF] Now listening on: https://localhost:5001
+2022-02-23 15:13:54.323 +05:30 [INF] Now listening on: http://localhost:5000
+2022-02-23 15:13:54.325 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-23 15:13:54.326 +05:30 [INF] Hosting environment: Development
+2022-02-23 15:13:54.327 +05:30 [INF] Content root path: C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web
+2022-02-23 15:13:59.110 +05:30 [INF] HTTP GET / responded 200 in 497.4686 ms
+2022-02-23 15:14:01.472 +05:30 [INF] HTTP GET /Identity/Account/Login responded 200 in 241.4248 ms
+2022-02-23 15:14:14.867 +05:30 [INF] User logged in.
+2022-02-23 15:14:14.879 +05:30 [INF] HTTP POST /Identity/Account/Login responded 302 in 4852.1688 ms
+2022-02-23 15:14:14.898 +05:30 [INF] HTTP GET / responded 200 in 13.0229 ms
+2022-02-23 15:14:18.017 +05:30 [INF] HTTP GET /LeaveRequests/Create responded 200 in 564.5263 ms
+2022-02-23 15:14:20.427 +05:30 [INF] HTTP GET /LeaveRequests/MyLeave responded 200 in 302.0228 ms
+2022-02-23 15:14:25.867 +05:30 [INF] HTTP GET /LeaveRequests/MyLeave responded 200 in 42.0171 ms
+2022-02-23 15:14:29.040 +05:30 [INF] User logged out.
+2022-02-23 15:14:29.043 +05:30 [INF] HTTP POST /Identity/Account/Logout responded 302 in 46.3824 ms
+2022-02-23 15:14:29.053 +05:30 [INF] HTTP GET / responded 200 in 1.4207 ms
+2022-02-23 15:28:55.862 +05:30 [INF] Now listening on: https://localhost:5001
+2022-02-23 15:28:55.897 +05:30 [INF] Now listening on: http://localhost:5000
+2022-02-23 15:28:55.900 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-23 15:28:55.903 +05:30 [INF] Hosting environment: Development
+2022-02-23 15:28:55.903 +05:30 [INF] Content root path: C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web
+2022-02-23 15:28:58.986 +05:30 [INF] HTTP GET / responded 200 in 774.2073 ms
+2022-02-23 15:29:01.669 +05:30 [INF] HTTP GET /Identity/Account/Login responded 200 in 144.5594 ms
+2022-02-23 15:29:15.240 +05:30 [INF] User logged in.
+2022-02-23 15:29:15.256 +05:30 [INF] HTTP POST /Identity/Account/Login responded 302 in 4717.8998 ms
+2022-02-23 15:29:15.276 +05:30 [INF] HTTP GET / responded 200 in 11.1644 ms
+2022-02-23 15:29:18.229 +05:30 [INF] HTTP GET /Employees responded 200 in 305.1862 ms
+2022-02-23 16:39:21.249 +05:30 [INF] Now listening on: https://localhost:5001
+2022-02-23 16:39:21.286 +05:30 [INF] Now listening on: http://localhost:5000
+2022-02-23 16:39:21.287 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-23 16:39:21.288 +05:30 [INF] Hosting environment: Development
+2022-02-23 16:39:21.288 +05:30 [INF] Content root path: C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web
+2022-02-23 16:39:24.766 +05:30 [INF] HTTP GET / responded 200 in 1208.7998 ms
+2022-02-23 16:48:09.929 +05:30 [INF] Now listening on: https://localhost:5001
+2022-02-23 16:48:09.971 +05:30 [INF] Now listening on: http://localhost:5000
+2022-02-23 16:48:09.973 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-23 16:48:09.974 +05:30 [INF] Hosting environment: Development
+2022-02-23 16:48:09.974 +05:30 [INF] Content root path: C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web
+2022-02-23 16:48:11.913 +05:30 [INF] HTTP GET / responded 200 in 524.0996 ms
+2022-02-23 16:48:20.773 +05:30 [INF] HTTP GET /Identity/Account/Login responded 200 in 272.4968 ms
+2022-02-23 16:48:34.325 +05:30 [INF] User logged in.
+2022-02-23 16:48:34.334 +05:30 [INF] HTTP POST /Identity/Account/Login responded 302 in 5613.1766 ms
+2022-02-23 16:48:34.350 +05:30 [INF] HTTP GET / responded 200 in 10.5567 ms
+2022-02-23 16:48:39.704 +05:30 [INF] HTTP GET /LeaveTypes responded 200 in 2128.5623 ms
+2022-02-23 16:48:42.964 +05:30 [INF] HTTP GET /LeaveRequests responded 200 in 270.9858 ms
+2022-02-23 16:48:45.485 +05:30 [INF] HTTP GET / responded 200 in 6.6257 ms
+2022-02-23 16:48:46.658 +05:30 [INF] HTTP GET /Employees responded 200 in 70.9995 ms
+2022-02-23 16:48:49.289 +05:30 [INF] User logged out.
+2022-02-23 16:48:49.292 +05:30 [INF] HTTP POST /Identity/Account/Logout responded 302 in 44.5777 ms
+2022-02-23 16:48:49.303 +05:30 [INF] HTTP GET / responded 200 in 1.7633 ms
