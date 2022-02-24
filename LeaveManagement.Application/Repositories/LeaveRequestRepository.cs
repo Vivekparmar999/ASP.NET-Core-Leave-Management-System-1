@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using LeaveManagement.Application.Contracts;
-using LeaveManagement.Data;
 using LeaveManagement.Common.Models;
+using LeaveManagement.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -91,8 +91,9 @@ namespace LeaveManagement.Application.Repositories
             var leaveRequests = await dbContext.LeaveRequests.Include(q => q.LeaveType).ToListAsync();
             var model = new AdminLeaveRequestViewVM(leaveRequests.Count,
                                                     leaveRequests.Count(q => q.Approved == true),
-                                                    leaveRequests.Count(q => q.Approved == null),
+                                                    leaveRequests.Count(q => q.Approved == null && q.Cancelled == false),
                                                     leaveRequests.Count(q => q.Approved == false),
+                                                    leaveRequests.Count(q => q.Approved == null && q.Cancelled == true),
                                                     mapper.Map<List<LeaveRequestVM>>(leaveRequests));
 
             foreach (var leaveRequest in model.LeaveRequests)

@@ -1,5 +1,5 @@
-﻿using LeaveManagement.Data;
-using LeaveManagement.Application.Contracts;
+﻿using LeaveManagement.Application.Contracts;
+using LeaveManagement.Data;
 namespace LeaveManagement.Application.Repositories
 {
     public class LeaveTypeRepository : GenericRepository<LeaveType>, ILeaveTypeRepository

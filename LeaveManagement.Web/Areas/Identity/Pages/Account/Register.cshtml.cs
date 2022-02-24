@@ -27,7 +27,7 @@ namespace LeaveManagement.Web.Areas.Identity.Pages.Account
             UserManager<Employee> userManager,
             SignInManager<Employee> signInManager,
             ILogger<RegisterModel> logger
-            ,IEmailSender emailSender
+            , IEmailSender emailSender
             )
         {
             _userManager = userManager;
@@ -54,7 +54,7 @@ namespace LeaveManagement.Web.Areas.Identity.Pages.Account
             public string Email { get; set; }
 
             [Required]
-            [Display(Name ="First Name")]
+            [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
             [Required]
@@ -68,7 +68,7 @@ namespace LeaveManagement.Web.Areas.Identity.Pages.Account
             [Display(Name = "Date Joined")]
             [DataType(DataType.Date)]
             public DateTime DateJoined { get; set; }
-            
+
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
@@ -93,14 +93,15 @@ namespace LeaveManagement.Web.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new Employee { 
+                var user = new Employee
+                {
                     UserName = Input.Email,
                     Email = Input.Email,
-                    DateJoined=Input.DateJoined,
-                    DateOfBirth=Input.DateOfBirth,
-                    FirstName=Input.FirstName,
-                    LastName=Input.LastName,
-                    };
+                    DateJoined = Input.DateJoined,
+                    DateOfBirth = Input.DateOfBirth,
+                    FirstName = Input.FirstName,
+                    LastName = Input.LastName,
+                };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

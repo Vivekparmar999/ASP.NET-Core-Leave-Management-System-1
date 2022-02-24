@@ -12,9 +12,9 @@
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <div class="row">
-                <div class="col">Leave Name</div>
-                <div class="col">Original Allocation</div>
-                <div class="col">Current Allocation</div>
+                <div class="col"><strong>Leave Name</strong></div>
+                <div class="col"><strong>Original Allocation</strong></div>
+                <div class="col"><strong>Current Allocation</strong></div>
             </div>
         </li>
         @foreach (var allocation in Model.LeaveAllocations)
@@ -32,9 +32,9 @@
                             Remaining Days <span class="badge bg-secondary">@allocation.NumberOfDays</span>
                         </button>
                     </div>
-                    <div class="col">
+@*                    <div class="col">
                         <a class="btn btn-warning" asp-action="EditAllocation" asp-route-id="@allocation.Id" style="color:#FFFFFF;"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Edit Allocation</a>
-                    </div>
+                    </div>*@
                 </div>
             </li>
 
@@ -68,47 +68,49 @@
     <tbody>
         @foreach (var item in Model.LeaveRequests)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.StartDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.EndDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DateRequested)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LeaveType.Name)
-                </td>
-                <td>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateRequested)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeaveType.Name)
+            </td>
+            <td>
 
-                    @if (item.Cancelled)
-                    {
-                        <span class="badge bg-secondary">Cancelled</span>
-                    }else if (item.Approved == null)
-                    {
-                        <span class="badge bg-warning">Pending</span>
-                    }
-                    else if (item.Approved.Value)
-                    {
-                        <span class="badge bg-success">Approved</span>
-                    }
-                    else if (item.Approved.Value == false)
-                    {
-                        <span class="badge bg-danger">Rejected</span>
-                    }
-
-                </td>       
-                @if (item.Approved == null) 
+                @if (item.Cancelled)
                 {
-                    <td>
-                        <input asp-for="@item.Id" type="hidden">
-                        <a asp-action="Cancel" class="btn btn-danger btn-sm" asp-route-id="@item.Id">Cancel Request</a>
-                    </td>
+                    <span class="badge bg-secondary">Cancelled</span>
                 }
-                
-            </tr>
+                else if (item.Approved == null)
+                {
+                    <span class="badge bg-warning">Pending</span>
+                }
+                else if (item.Approved.Value)
+                {
+                    <span class="badge bg-success">Approved</span>
+                }
+                else if (item.Approved.Value == false)
+                {
+                    <span class="badge bg-danger">Rejected</span>
+                }
+
+            </td>
+            <td>
+            @if (item.Approved == null && item.Cancelled == false)
+            {
+                <form asp-action="Cancel" asp-route-id="@item.Id" method="post">
+                    <input asp-form="@item.Id" type="hidden" />
+                    <button type="submit" class="btn btn-danger btn-sm">Cancel Request</button>
+                </form>
+            }
+                </td>
+        </tr>
         }
     </tbody>
 </table>

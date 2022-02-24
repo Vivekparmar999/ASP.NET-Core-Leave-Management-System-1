@@ -7,35 +7,43 @@
 <h1>Index</h1>
 
 <div class="row">
-    <div class="col-3">
+    <div class="col-2">
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title text-primary">@Model.TotalRequests</h2>
-                <p class="card-text">@Html.DisplayNameFor(m => m.TotalRequests)</p>
+                <p class="card-text p-2">@Html.DisplayNameFor(m => m.TotalRequests)</p>
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-2">
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title text-success">@Model.ApprovedRequests</h2>
-                <p class="card-text">@Html.DisplayNameFor(m => m.ApprovedRequests)</p>
+                <p class="card-text p-2">@Html.DisplayNameFor(m => m.ApprovedRequests)</p>
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-2">
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title text-warning">@Model.PendingRequests</h2>
-                <p class="card-text">@Html.DisplayNameFor(m => m.PendingRequests)</p>
+                <p class="card-text p-2">@Html.DisplayNameFor(m => m.PendingRequests)</p>
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-2">
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title text-danger">@Model.RejectedRequests</h2>
-                <p class="card-text">@Html.DisplayNameFor(m => m.RejectedRequests)</p>
+                <p class="card-text p-2">@Html.DisplayNameFor(m => m.RejectedRequests)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-secondary">@Model.CancelledRequests</h2>
+                <p class="card-text p-2">@Html.DisplayNameFor(m => m.CancelledRequests)</p>
             </div>
         </div>
     </div>

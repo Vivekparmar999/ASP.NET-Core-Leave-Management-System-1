@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace LeaveManagement.Common.Models
+﻿namespace LeaveManagement.Common.Models
 {
-    public class LeaveAllocationEditVM:LeaveAllocationVM
+    public class LeaveAllocationEditVM : LeaveAllocationVM
     {
 
         public string EmployeeId { get; set; }

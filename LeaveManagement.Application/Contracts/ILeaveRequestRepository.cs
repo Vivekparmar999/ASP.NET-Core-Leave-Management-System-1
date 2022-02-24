@@ -1,5 +1,5 @@
-﻿using LeaveManagement.Data;
-using LeaveManagement.Common.Models;
+﻿using LeaveManagement.Common.Models;
+using LeaveManagement.Data;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

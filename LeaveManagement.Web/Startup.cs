@@ -1,6 +1,7 @@
+using LeaveManagement.Application.Configuration;
 using LeaveManagement.Application.Contracts;
-using LeaveManagement.Data;
 using LeaveManagement.Application.Repositories;
+using LeaveManagement.Data;
 using LeaveManagement.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,7 +12,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using LeaveManagement.Application.Configuration;
 
 namespace LeaveManagement.Web
 {
@@ -29,22 +29,24 @@ namespace LeaveManagement.Web
         {
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
-            
-            services.AddIdentity<Employee,IdentityRole>(opt =>
-            {
-                opt.Password.RequiredLength = 7;
-                opt.Password.RequireDigit = true;
-                opt.Password.RequireUppercase = true;
-                opt.User.RequireUniqueEmail = true;
-                opt.SignIn.RequireConfirmedEmail = true;
-                opt.SignIn.RequireConfirmedAccount = true;
-            })
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString"),
+                                    b => b.MigrationsAssembly("LeaveManagement.Web")));
+
+            services.AddIdentity<Employee, IdentityRole>(opt =>
+             {
+                 opt.Password.RequiredLength = 7;
+                 opt.Password.RequireDigit = true;
+                 opt.Password.RequireUppercase = true;
+                 opt.User.RequireUniqueEmail = true;
+                 opt.SignIn.RequireConfirmedEmail = true;
+                 opt.SignIn.RequireConfirmedAccount = true;
+             })
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
-            services.ConfigureApplicationCookie(option => {
-                option.LoginPath =  $"/Identity/Account/Login";
+            services.ConfigureApplicationCookie(option =>
+            {
+                option.LoginPath = $"/Identity/Account/Login";
                 option.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
 
@@ -53,11 +55,11 @@ namespace LeaveManagement.Web
             services.AddHttpContextAccessor();
 
             services.AddAutoMapper(typeof(MapperConfig));
-            services.AddTransient < IEmailSender> (s=>new EmailSender("localhost",25,"no-reply@leavemanagement.com"));//(ServerPath,port,FromEmail)
+            services.AddTransient<IEmailSender>(s => new EmailSender("localhost", 25, "no-reply@leavemanagement.com"));//(ServerPath,port,FromEmail)
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddScoped<ILeaveTypeRepository,LeaveTypeRepository>();
-            services.AddScoped<ILeaveRequestRepository,LeaveRequestRepository>();
-            services.AddTransient<ILeaveAllocationRepository,LeaveAllocationRepository>();
+            services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
+            services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
+            services.AddTransient<ILeaveAllocationRepository, LeaveAllocationRepository>();
             services.AddRazorPages();
         }
 
@@ -75,6 +77,7 @@ namespace LeaveManagement.Web
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseSerilogRequestLogging();

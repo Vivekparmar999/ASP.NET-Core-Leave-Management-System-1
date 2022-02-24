@@ -1,12 +1,12 @@
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.csproj.AssemblyReference.cache
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.AssemblyInfoInputs.cache
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.AssemblyInfo.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.csproj.CoreCompileInputs.cache
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.RazorAssemblyInfo.cache
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.RazorAssemblyInfo.cs
-C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.csproj.AssemblyReference.cache
-C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\LeaveManagement.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\staticwebassets\LeaveManagement.Web.StaticWebAssets.Manifest.cache
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\staticwebassets\LeaveManagement.Web.StaticWebAssets.xml
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\scopedcss\bundle\LeaveManagement.Web.styles.css
@@ -46,6 +46,7 @@ C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\n
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\LeaveTypes\Edit.cshtml.g.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\LeaveTypes\Index.cshtml.g.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\146734\source\repos\LeaveManagementNet6\LeaveManagement.Web\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs

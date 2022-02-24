@@ -47,7 +47,7 @@ namespace LeaveManagement.Application.Repositories
 
         public async Task<T> GetAsync(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return null;
             }

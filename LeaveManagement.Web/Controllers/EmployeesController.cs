@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using LeaveManagement.Common.Constants;
 using LeaveManagement.Application.Contracts;
-using LeaveManagement.Data;
+using LeaveManagement.Common.Constants;
 using LeaveManagement.Common.Models;
+using LeaveManagement.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -39,18 +39,18 @@ namespace LeaveManagement.Web.Controllers
 
 
         //Get: EmployeesController/ViewAllocation/employeeId
-        public async Task<IActionResult> ViewAllocation(string id) 
+        public async Task<IActionResult> ViewAllocation(string id)
         {
             var model = await leaveAllocationRepository.GetEmployeeAllocations(id);
             return View(model);
         }
 
 
-/*        // GET: EmployeesController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }*/
+        /*        // GET: EmployeesController/Details/5
+                public ActionResult Details(int id)
+                {
+                    return View();
+                }*/
 
         // GET: EmployeesController/EditAllocation/5
         public async Task<IActionResult> EditAllocation(int id)
@@ -74,16 +74,16 @@ namespace LeaveManagement.Web.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    if (await leaveAllocationRepository.UpdateEmployeeAllocation(model)) 
+                    if (await leaveAllocationRepository.UpdateEmployeeAllocation(model))
                     {
                         return RedirectToAction(nameof(ViewAllocation), new { id = model.EmployeeId });
                     }
                 }
-                   
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty,"An Error Has Ocurred.");
+                ModelState.AddModelError(string.Empty, "An Error Has Ocurred.");
             }
             model.Employee = mapper.Map<EmployeeListVM>(await userManager.FindByIdAsync(model.EmployeeId));
             model.LeaveType = mapper.Map<LeaveTypeVM>(await leaveTypeRepository.GetAsync(model.LeaveTypeId));

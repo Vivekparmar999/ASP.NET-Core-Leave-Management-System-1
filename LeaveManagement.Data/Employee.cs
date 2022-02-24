@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LeaveManagement.Data
 {
-    public class Employee:IdentityUser
+    public class Employee : IdentityUser
     {
-        [Display(Name ="First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Display(Name = "Last Name")]
         public string LastName { get; set; }

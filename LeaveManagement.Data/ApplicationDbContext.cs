@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using LeaveManagement.Data.Configuration.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
-using System.Threading;
 using System.Linq;
-using LeaveManagement.Data.Configuration.Entities;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace LeaveManagement.Data
 {
-    public class ApplicationDbContext: IdentityDbContext<Employee>
+    public class ApplicationDbContext : IdentityDbContext<Employee>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
@@ -20,6 +20,7 @@ namespace LeaveManagement.Data
             builder.ApplyConfiguration(new RoleSeedConfiguration());
             builder.ApplyConfiguration(new UserSeedConfiguration());
             builder.ApplyConfiguration(new UserRoleSeedConfiguration());
+
         }
 
 
@@ -29,13 +30,13 @@ namespace LeaveManagement.Data
             foreach (var entry in base
                                     .ChangeTracker
                                     .Entries<BaseEntity>()
-                                    .Where(q=>q.State == EntityState.Modified || q.State == EntityState.Modified)
-                      ) 
+                                    .Where(q => q.State == EntityState.Modified || q.State == EntityState.Modified)
+                      )
             {
                 entry.Entity.DateModified = System.DateTime.Now;
 
                 //Calling Add or AddRange
-                if (entry.State == EntityState.Added) 
+                if (entry.State == EntityState.Added)
                 {
                     entry.Entity.DateCreated = System.DateTime.Now;
                 }
@@ -48,7 +49,7 @@ namespace LeaveManagement.Data
 
         // Admin Will add NEW type of leave in db or CRUD
         public DbSet<LeaveType> LeaveTypes { get; set; }
-        
+
         //Admin will set new LeaveType to all employee in LeaveManagement -> LeaveType ->Allocate Leave
         //After that only 
         public DbSet<LeaveAllocation> LeaveAllocations { get; set; }

@@ -19,7 +19,7 @@ namespace LeaveManagement.Web.Areas.Identity.Pages.Account
         private readonly SignInManager<Employee> _signInManager;
         private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(SignInManager<Employee> signInManager, 
+        public LoginModel(SignInManager<Employee> signInManager,
             ILogger<LoginModel> logger,
             UserManager<Employee> userManager)
         {
@@ -74,7 +74,7 @@ namespace LeaveManagement.Web.Areas.Identity.Pages.Account
             returnUrl ??= Url.Content("~/");
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-        
+
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout

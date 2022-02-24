@@ -1,7 +1,7 @@
-﻿using LeaveManagement.Data;
+﻿using LeaveManagement.Application.Contracts;
 using LeaveManagement.Common.Constants;
-using LeaveManagement.Application.Contracts;
 using LeaveManagement.Common.Models;
+using LeaveManagement.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
